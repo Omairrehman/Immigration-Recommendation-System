@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6fad3641f2.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/main.css') }}"> -->
+    <link rel="stylesheet" href="css/trial.css">
+
+    
+    <title>ImmigrationReccSystem</title>
+
+  </head>
+  <body>
+    <div class="colored" id="title">
+      <nav class='navbar navbar-expand-lg navbar-dark'>
+          <a class="navbar-brand title-font" id="title1 "href="#">Immigration Recommendation System</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class='navbar-nav ml-auto'>
+  
+              <li class='nav-item'>
+                <a class='nav-link title-font' href="#aboutus">About Us</a>
+              </li>
+              
+            </ul>
+          </div>
+  
+        </nav>
+      </div>
+    <!-- <form action="/map" method = "POST">
+      <p>Please select your country of origin <input type = "text" name = "Name" /></p>
+      <div class="choose">
+      <select class="custom-select">
+        <option selected>Please select your country of origin from the drop down menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+      <p>City <input type = "text" name = "City" /></p>
+      <p>Country <input type = "text" name = "Country" /></p>
+      <p><input type = "submit" value = "Submit" /></p>
+  </form> -->
+<!--       <div class="header1">
+      
+    </div> -->
+  <div class="back1">
+      
+    </div>
+
+  <!-- trial -->
+  <!-- <div class="content1"> -->
+  <form class="needs-validation content1" novalidate action="/map" method = "POST">
+
+      <div class="form-row  justify-content-md-center">
+      <div class="col-md-4 mb-3 align-self-center">
+        <label class=" text-white"for="validationCustom05">The number of top recommendations you want </label>
+        <input type="text" class="form-control" id="validationCustom05" required>
+        <div class="invalid-feedback">
+          Please provide a number
+        </div>
+      </div>
+      
+      
+    </div>
+    <div class="form-row  justify-content-md-center">
+      <div class="col-md-6 mb-3 align-self-center">
+        <label class=" text-white" for="validationCustom04">Please Choose your Country of Origin</label>
+        <select class="custom-select" id="validationCustom04" required>
+          <option selected disabled value="">Choose from the list below</option>
+          <option>Pakistan</option>
+          <option>Afghanistan</option>
+          <option>Mexico</option>
+          <option>Chad</option>
+          <option>Pakistan</option>
+          <option>Afghanistan</option>
+          <option>Mexico</option>
+          <option>Chad</option>
+          <option>Pakistan</option>
+          <option>Afghanistan</option>
+          <option>Mexico</option>
+          <option>Chad</option>
+          <option>Pakistan</option>
+          <option>Afghanistan</option>
+          <option>Mexico</option>
+          <option>Chad</option>
+          <option>Pakistan</option>
+          <option>Afghanistan</option>
+          <option>Mexico</option>
+          <option>Chad</option>
+          <option>Pakistan</option>
+          <option>Afghanistan</option>
+          <option>Mexico</option>
+          <option>Chad</option>
+          <option>Pakistan</option>
+          <option>Afghanistan</option>
+          <option>Mexico</option>
+          <option>Chad</option>
+          <option>Pakistan</option>
+          <option>Afghanistan</option>
+          <option>Mexico</option>
+          <option>Chad</option>
+
+
+
+        </select>
+        <div class="invalid-feedback">
+          Please select a valid state.
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 my-1 align-items-center ">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+    
+    <!-- <button class="btn btn-primary" type="submit">Submit</button> -->
+  <!-- </div> -->
+    <!-- <button class="btn btn-primary" type="submit">Submit</button> -->
+  </form>
+  <footer class="white" id="footer">
+       <!--  <i class="fab fa-twitter footer-icon"></i>
+        <i class="fab fa-facebook footer-icon"></i>
+        <i class="fab fa-instagram footer-icon"></i>
+        <i class="fas fa-envelope footer-icon"></i> -->
+        <!-- Made by Usman Ali, Omair Rehman, Hamza Ansari © Copyright 2020 -->
+        <p class="footer-text">Made by Usman Ali, Omair Rehman, Hamza Ansari © Copyright 2020</p>
+
+      </footer>
+  
+  <script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+  (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.getElementsByClassName('needs-validation');
+      // Loop over them and prevent submission
+      var validation = Array.prototype.filter.call(forms, function(form) {
+        form.addEventListener('submit', function(event) {
+          if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    }, false);
+  })();
+  </script>
+    <!-- <p>Created by Muyan Jiang, Omar Hussein, Runyao Fan, Usman Ali</p> -->
+
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6fad3641f2.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/map.css') }}">
+    <link rel="stylesheet" href="http://cdn.bokeh.org/bokeh/release/bokeh-0.11.1.min.css"    type="text/css" />
+    <script type="text/javascript" src="http://cdn.bokeh.org/bokeh/release/bokeh-0.11.1.min.js"></script>
+    {{ script | safe }}
+    <link rel="stylesheet" href="http://cdn.bokeh.org/bokeh/release/bokeh-0.11.1.min.css"    type="text/css" />
+    <script src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-1.4.0.min.js"
+        crossorigin="anonymous"></script>
+    <title>ImmigrationReccSystem</title>
+
+  </head>
+  <body>
+    <div class="colored" id="title">
+      <nav class='navbar navbar-expand-lg navbar-dark'>
+          <a class="navbar-brand title-font" id="title1 "href="#">Immigration Recommendation System</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class='navbar-nav ml-auto'>
+  
+              <li class='nav-item'>
+                <a class='nav-link title-font' href="#aboutus">About Us</a>
+              </li>
+              
+            </ul>
+          </div>
+  
+        </nav>
+      </div>
+
+    </div> 
+    <div class="content1">
+       <h1> The map highlighting {{userinput}}'s top recommedations is being displayed on another tab</h1> 
+    </div>
+    <div class='bokeh'>
+        {{ div | safe }}
+    </div>
+
+  <footer class="white" id="footer">
+
+        <p class="footer-text">Made by Usman Ali, Omair Rehman, Hamza Ansari © Copyright 2020</p>
+
+    </footer>
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDmyE8tAty-Lhd-rJQvIsGk8ocOIdHwYSE&callback=initMap">
+</script>
+</body>
+</html>
+    
