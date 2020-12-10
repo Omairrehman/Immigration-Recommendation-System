@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/6fad3641f2.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+        <!-- linking to customized style sheet -->
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/aboutus.css') }}">
+
+    
+    <title>ImmigrationReccSystem</title>
+
+  </head>
+  <body>
+    <div class="colored" id="title">
+      <!-- navbar -->
+      <nav class='navbar navbar-expand-lg navbar-dark'>
+          <a class="navbar-brand title-font" id="title1 "href="home">Immigration Recommendation System</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class='navbar-nav ml-auto'>
+  
+
+              <li class='nav-item'>
+                <a class='nav-link title-font' href="home">Home</a>
+              </li>
+              
+            </ul>
+          </div>
+  
+        </nav>
+      </div>
+    <div class="header1">
+      About Us
+    </div>
+    <div class="content1 text-left">
+    	<h2> Our Mission Statement</h2>
+    	<p> Every year, more than a million people from all around the world immigrate to the United States. We believe that in order for immigrants to find a sense of belonging in what seems to them as a foreign land, connecting with their communities is important. </p>
+
+      <p> We strive to facilitate this connection as our recommendation system is linked to a database that contains data on the number of immigrants for each country for each popular country and all state of the US. This allows the user to find the most popular immigration destination for people from their country of origin.</p>
+
+    	<p>Furthermore, due to the rise of hate crimes in the US, often immigrants are anxious about their safety, our application allows users to look at the number of hate crimes at a state level of the countries recommend to them. We have used Google Maps API to map out the concentrations of each immigrant’s nationality in the U.S along with that our application, shows the state-level hate crimes to help the individual assess personal security risks in each state.</p>
+
+      <h2>Our Data Sources</h2>
+      <p>We have collected data on the number of permanent residency/green card issued from 2007 to 2019 for about 200 countries, broken down at state-level as well as county-level, from the department of homeland security. Furthermore, we are using open data soft website to get the data set on the geolocation points of the counties.  And we have also collected data on the number of hate crimes reported at a state-level from 2007 to 2019 from the FBI's Uniform Crime Reporting (UCR) Program's hate crime statistics datasets.</p>
+
+      <h2>Methodology</h2>
+      <p>In our application, number of hate crimes are given along with a hate crime rating. Hate crimes are recorded from 2007 to 2019 for each state. A hate crime index was created as a ratio of total hate crimes happening in a state to  total number of admissions of immigrants in each state over the same time period. Statistical analysis showed the following quartiles of the crime index: 
+      </p>
+      <ul class="text-left">
+        <li>First Quartile (25%):  0.006783 hatecrime per admission (2007-2019)</li>
+        <li>Second Quartile (50%):  0.006783 to 0.019142 hatecrime per admission (2007-2019)</li>
+        <li>Third Quartile (75%): 0.019142 to 0.039815 hatecrime per admission (2007-2019)</li>
+        <li>Fourth Quartile (100%):  above 0.039815 hatecrime per admission (2007-2019)</li>
+      
+      </ul>
+      <p>If the value was below first quartile the rating will be “Very Low” while if it’s within the second quartile then rating will be “Low”. On the other hand, if the value of crime index comes within third or fourth quartile then the rating will be “High” and “Very High” respectively.</p>
+      <p>A hate crime rating is necessary as it helps the user to understand what hate crime numbers indicate.</p>
+
+
+	    	<h2 class="text-center"> Meet the Team</h2>
+	    	<div class="card-deck">
+		  <div class="card">
+		    <img src="{{url_for('static', filename='/images/omair.jpg')}}" class="card-img-top" alt="...">
+		    <div class="card-body">
+		      <h5 class="card-title"> Omair Rehman </h5>
+		      <p class="card-text"> Omair is a junior, majoring in economics. He is passionate about debating, travelling, photography and development economics. </p>
+		    </div>
+		    <div class="card-footer">
+		      <small class="text-muted">Class of 2022</small>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <img src="{{url_for('static', filename='/images/usman.jpg')}}" class="card-img-top" alt="...">
+		    <div class="card-body">
+		      <h5 class="card-title"> Usman Ali </h5>
+		      <p class="card-text"> Usman is a Junior, majoring in Computer Science. His interests lie in Data Science and Web Development. Apart from that, he is passionate about dancing, acting, and painting. </p>
+		    </div>
+		    <div class="card-footer">
+		      <small class="text-muted">Class of 2022</small>
+		    </div>
+		  </div>
+		  <div class="card">
+		    <img src="{{url_for('static', filename='/images/hamza.jpg')}}" class="card-img-top" alt="...">
+		    <div class="card-body">
+		      <h5 class="card-title">Hamza Ansari</h5>
+		      <p class="card-text">Hamza is in his penultimate year pursuing mechanical engineering. He is enthusiastic about robotics in automation, machine learning, and enjoys swimming and rowing.</p>
+		    </div>
+        <!-- footer -->
+		    <div class="card-footer">
+		      <small class="text-muted">Class of 2022</small>
+		    </div>
+		  </div>
+		  
+		</div>
+
+
+    </div>
+
+
+      <footer class="white" id="footer">
+
+        <p class="footer-text">Made by Usman Ali, Omair Rehman, Hamza Ansari © Copyright 2020</p>
+
+      </footer>
+
+  </body>
+</html>
